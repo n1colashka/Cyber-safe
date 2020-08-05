@@ -1,13 +1,346 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Cyber safe company</title>
+    <title>Cyber Safe company</title>
 </head>
+
 <body>
-    
+
+    <div class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <img src="images/logo.png" alt="Логотип 'Cyber Safe'">
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#hero" class="navigation__link">Главная</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#benefits" class="navigation__link">О нас</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#slider" class="navigation__link">Как мы работаем</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contacts" class="navigation__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero section" id="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__info">
+                    <div class="hero__subtitle subtitle">
+                        Кибер-преступления
+                    </div>
+                    <h1 class="hero__title title">
+                        Мы поможем защитить вашу сеть.
+                    </h1>
+                    <div class="hero__text text">
+                        <p>
+                            Данные вашей организации находятся в опасности. <br>
+                            Каждую минуту происходит утечка большого количества информации.
+                        </p>
+                        <p>
+                            27% компаний в мире столкнулись с кибератаками на смартфоны сотрудников. <br>
+                            С начала 2017 года киберпреступники похитили около $1,2 млрд в криптовалюте.
+                        </p>
+                    </div>
+                    <form class="hero__form form-consult" action="#">
+                        <div class="hero__form-title form-title">Получить консультацию</div>
+                        <div class="hero__form-inputs input-block">
+                            <input class="hero__form-input input" type="email" name="heroEmail" placeholder="Ваш E-mail"></input>
+                            <button class="btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="hero__img">
+                    <img width="296" height="595" src="images/iphone.png" alt="Изображение взломанного смартфона">
+                </div>
+            </div>
+        </div>
+        <a class="arrow-down arrow-scroll" href="#benefits">
+            <img src="images/arrow-down.png" alt="Стрелка перехода на следующий экран">
+        </a>
+    </section>
+
+    <section class="benefits section" id="benefits">
+        <div class="container">
+            <div class="benefits__inner">
+                <div class="benefits__items">
+                    <ul class="benefits__list">
+                        <li class="benefits__item" value="1">
+                            <div class="benefits__item-img">
+                                <img src="../images/benefits-1.svg" alt="Изображение доски и графиков">
+                            </div>
+                            <div class="benefits__item-title">
+                                Анализируем состояние сети
+                            </div>
+                        </li>
+                        <li class="benefits__item">
+                            <div class="benefits__item-img">
+                                <img src="../images/benefits-2.svg" alt="Изображение доски и графиков">
+                            </div>
+                            <div class="benefits__item-title">
+                                Производим поиск слабых мест
+                            </div>
+                        </li>
+                        <li class="benefits__item">
+                            <div class="benefits__item-img">
+                                <img src="../images/benefits-3.svg" alt="Изображение доски и графиков">
+                            </div>
+                            <div class="benefits__item-title">
+                                Планируем устранение уязвимостей
+                            </div>
+                        </li>
+                        <li class="benefits__item">
+                            <div class="benefits__item-img">
+                                <img src="../images/benefits-4.svg" alt="Изображение доски и графиков">
+                            </div>
+                            <div class="benefits__item-title">
+                                Обечспечиваем надежную защиту
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits__info">
+                    <div class="benefits__subtitle subtitle">
+                        Cyber-safe
+                    </div>
+                    <h4 class="benefits__title title">
+                        Компания, которая противостоит хакерам.
+                    </h4>
+                    <div class="benefits__text text">
+                        <p>
+                            Деятельность нашей компании основана на искоренении киберпреступности в целом, поэтому помимо основной деятельности по защите компаний от угроз в сети, мы ежегодно  жертвуем более 1 000 000$ в фонд борьбы с киберпреступностью.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team section" id="team">
+        <div class="container">
+            <div class="team__inner">
+                <div class="team__info">
+                    <div class="team__subtitle subtitle">
+                        Команда
+                    </div>
+                    <h4 class="team__title title">
+                        У нас работают только профессионалы своего дела.
+                    </h4>
+                    <div class="team__text text">
+                        <p>
+                            Наши сотрудники высококвалифицированные специалисты с большим опытом в сфере защиты информации. <br>
+                            Они искренне любят свою работу и отдаются своему делу на все 100%.
+                        </p>
+                    </div>
+                    <form class="team__form form-consult" action="#">
+                        <div class="team__form-title form-title">Получить консультацию</div>
+                        <div class="team__form-inputs input-block">
+                            <input class="team__form-input input" type="email" name="teamEmail" placeholder="Ваш E-mail"></input>
+                            <button class="btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="team__images">
+            <div class="team__img">
+                <img src="../images/team-1.jpg" alt="Фотография сотрудников компании">
+            </div>
+            <div class="team__img">
+                <img src="../images/team-2.jpg" alt="Фотография сотрудников компании">
+            </div>
+            <div class="team__img">
+                <img src="../images/team-3.jpg" alt="Фотография сотрудников компании">
+            </div>
+        </div>
+    </section>
+
+    <section class="slider section" id="slider">
+        <div class="container">
+            <div class="slider__wrapper">
+                <div class="slider__title title">Почему мы?</div>
+                <div class="slider__inner swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/slider-1.jpg" alt="Изображение серверов">
+                            </div>
+                            <div class="slider__item-info">
+                                <div class="slider__item-title">Надежное хранение данных</div>
+                                <div class="slider__item-text">
+                                    <p>
+                                        Мы можем гарантировать защиту ваших данных, находящихся на наших серверах.
+                                    </p>
+                                    <p>
+                                        У нас мощные и современное технологии, которые выдержат максимальное напряжение и не позволит вторгнуться недоброжелателям в нашу сеть.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/slider-2.jpg" alt="Изображение серверов">
+                            </div>
+                            <div class="slider__item-info">
+                                <div class="slider__item-title">Постоянный анализ защиты</div>
+                                <div class="slider__item-text">
+                                    <p>
+                                        Анализируем все возможные варианты защиты от кибератак.
+                                    </p>
+                                    <p>
+                                        У нас мощные и современное технологии, которые выдержат максимальное напряжение и не позволит вторгнуться недоброжелателям в нашу сеть.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/slider-4.jpg" alt="Изображение серверов">
+                            </div>
+                            <div class="slider__item-info">
+                                <div class="slider__item-title">Планирование архитектуры сети</div>
+                                <div class="slider__item-text">
+                                    <p>
+                                        Наши специалисты разрабатывают масштабируемые решения для защиты со всех сторон.
+                                    </p>
+                                    <p>
+                                        У нас мощные и современное технологии, которые выдержат максимальное напряжение и не позволит вторгнуться недоброжелателям в нашу сеть.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item swiper-slide">
+                            <div class="slider__item-img">
+                                <img src="images/slider-3.jpg" alt="Изображение серверов">
+                            </div>
+                            <div class="slider__item-info">
+                                <div class="slider__item-title">Трудолюбивые сотрудники</div>
+                                <div class="slider__item-text">
+                                    <p>
+                                        Наши специалисты обожают свою работу и защитят ваши данные.
+                                    </p>
+                                    <p>
+                                        У нас мощные и современное технологии, которые выдержат максимальное напряжение и не позволит вторгнуться недоброжелателям в нашу сеть.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-button-prev">
+                        <img src="images/arrow-left.png" alt="Стрелка влево">
+                    </div>
+                    <div class="slider-button-next">
+                        <img src="images/arrow-right.png" alt="Стрелка вправо">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lead" id="lead">
+        <div class="container">
+            <div class="lead__inner">
+                <div class="lead__subtitle subtitle">Заявка</div>
+                <h4 class="lead__title title">Запишитесь на бесплатную консультацию</h4>
+                <div class="lead__text text">Заполните форму и мы свяжемся с вами через несколько минут</div>
+                <form class="lead__form form-consult" action="#">
+                    <div class="lead__form-inputs">
+                        <input class="lead__form-input input" type="text" name="leadName" placeholder="Ваши ФИО"></input>
+                        <input class="lead__form-input input" type="email" name="leadEmail" placeholder="Ваш E-mail"></input>
+                        <input class="lead__form-input input" type="tel" name="leadPhone" placeholder="Ваш номер телефона"></input>
+                        <button class="lead__form-btn btn" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="contacts section" id="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__head">
+                    <div class="contacts__subtitle subtitle">Контакты</div>
+                    <h4 class="contacts__title title">Свяжитесь с нами.</h4>
+                    <div class="contacts__text text">Вы можете связаться с нами лично</div>
+                </div>
+                <div class="contacts__content">
+                    <address class="contacts__address">
+                        <div class="contacts__address-item">
+                            <div class="contacts__address-title">офис в России:</div>
+                            <div class="contacts__address-text">Средний Кисловский пер., 3, строение 1А, Москва, Россия, 125009<br> <a href="tel:+74951111111" >+7 (495) 111-11-11</a></div>
+                        </div>
+                        <div class="contacts__address-item">
+                            <div class="contacts__address-title">офис в Германии:</div>
+                            <div class="contacts__address-text">Alt Reinickendorf 99, Waltenhofen, Freistaat Bayern, 87448 <br> <a href="tel:+08303285658">+(08303) 28 56 58</a></div>
+                        </div>
+                        <div class="contacts__address-item">
+                            <div class="contacts__address-title">офис в Великобритании:</div>
+                            <div class="contacts__address-text">62  Seafield Street, Llanteg, SA67 6SL <br> <a href="tel:+07002192955">+(070) 0219 2955</a></div>
+                        </div>
+                        <div class="contacts__address-item">
+                            <div class="contacts__address-title">офис в США:</div>
+                            <div class="contacts__address-text">6624 Iron Private, Kemp, Hawaii, 96827-0798, US,  <br> <a href="tel:+8082458876">+(808) 245-8876</a></div>
+                        </div>
+                    </address>
+                    <div class="contacts__social">
+                        <a class="contacts__social-link" href="https://github.com/n1colashka"><img src="images/github.svg" alt="github"></a>
+                        <a class="contacts__social-link" href="https://teleg.run/Deckards"><img src="images/telegram.svg" alt="telegram"></a>
+                        <a class="contacts__social-link" href="https://facebook.com"><img src="images/facebook.svg" alt="facebook"></a>
+                        <a class="contacts__social-link" href="https://api.whatsapp.com/send?phone=87054032928"><img src="images/whatsapp.svg" alt="whatsapp"></a>
+                        <a class="contacts__social-link" href="https://vk.com/n1colashka"><img src="images/vk.svg" alt="vk"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="arrow-up arrow-scroll" href="#hero">
+            <img src="images/arrow-down.png" alt="Стрелка перехода на следующий экран">
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__links">
+                    <div class="footer__links-block">
+                        <a href="#hero">Главная</a>
+                        <a href="#benefits">О нас</a>
+                        <a href="#slider">Как мы работаем</a>
+                        <a href="#contacts">Контакты</a>
+                    </div>
+                    <div class="footer__links-block">
+                        <a href="#lead">Консультация</a>
+                        <a href="https://github.com/n1colashka">Github</a>
+                        <a href="https://teleg.run/Deckards">Telegram</a>
+                        <a href="https://vk.com/n1colashka">Vkontakte</a>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <div class="footer__copy-title">&copy; Все права защищены.</div>
+                    <div class="footer__copy-author">Дизайн и вёрстка: <a href="https://github.com/n1colashka">https://github.com/n1colashka</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/libs.min.js"></script>
+<script src="js/index.js"></script>
 </body>
+
 </html>

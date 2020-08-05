@@ -1,0 +1,21 @@
+%gradient
+    background-image: linear-gradient(90deg, #26d69e 3%, #2755d7 100%)
+
+%line
+    background-image: linear-gradient(to top right, rgb(105, 117, 240), rgb(103, 125, 230), rgb(101, 133, 220), rgb(99, 142, 209), rgb(97, 150, 199), rgb(95, 158, 189), rgb(93, 166, 179), rgb(91, 174, 169), rgb(89, 182, 159), rgb(87, 191, 148), rgb(85, 199, 138), rgb(83, 207, 128))
+%line-reverse
+    background-image: linear-gradient(to top right, rgb(40, 212, 109), rgb(41, 196, 119), rgb(42, 180, 129), rgb(43, 164, 139), rgb(44, 148, 149), rgb(45, 132, 159), rgb(47, 117, 169), rgb(48, 101, 179), rgb(49, 85, 189), rgb(50, 69, 199), rgb(51, 53, 209), rgb(52, 37, 219))
+
+%triangle
+    filter: drop-shadow(0 0 31px rgba(33,39,39,0.54))
+
+@mixin font($name)
+    @if $name == 'regular'
+        font-family: 'GothamPro', sans-serif
+        font-weight: 400
+    @if $name == 'light'
+        font-family: 'GothamPro-Light', sans-serif
+        font-weight: 300
+    @if $name == 'bold'
+        font-family: 'GothamPro-Bold', sans-serif
+        font-weight: 700

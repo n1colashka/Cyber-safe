@@ -1,3 +1,254 @@
-body
-    background-color: #000
+@import 'fonts'
+@import 'vars'
+@import 'global'
+
+.header
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    padding: 30px 0
+    z-index: 100
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+.navigation
+    &__item
+        display: inline-block
+
+    &__item + .navigation__item
+        margin-left: 30px
+
+.hero
+    padding-top: 200px
+    background-image: url('../images/hero-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__info
+        max-width: 750px
     
+    &__text
+        margin-bottom: 70px
+
+.benefits
+    position: relative
+    display: flex
+    align-items: center
+    background-image: url('../images/benefits-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__info
+        max-width: 600px
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        background-color: #568ecc
+        border-radius: 40px
+        text-align: center
+        padding: 20px 15px
+        height: 175px
+        max-width: 240px
+        margin-bottom: 25px
+        &:nth-child(even)
+            margin-left: 20px
+
+    &__item-img
+        margin-bottom: 20px
+        img
+            width: 45px
+
+.team
+    &::after
+        position: absolute
+        content: ""
+        background-image: url('../images/team-bg.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        opacity: .4
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        z-index: -1
+
+    &__info
+        text-align: center
+        max-width: 975px
+        margin: 0 auto
+
+    &__form
+        max-width: 750px
+        margin: 0 auto
+
+    .team__form-title
+        &::before
+            @extend %line-reverse
+
+    &__images
+        position: absolute
+        bottom: 0
+        display: flex
+        margin-top: 75px
+        img
+            width: 100%
+
+.slider
+    background-image: url('../images/slider-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    padding-bottom: 190px
+
+    &__inner
+        height: 515px
+        width: 100%
+
+    &__title
+        text-align: center
+        margin-bottom: 175px
+
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        text-align: center
+
+    &__item-title
+        @include font('light')
+        font-size: 30px
+        line-height: 36px
+        letter-spacing: -0.4px
+        margin-bottom: 60px
+        text-transform: uppercase
+
+    &__item-info
+        font-size: 16px
+        line-height: 24px
+        max-width: 360px
+
+    &__item-text
+        p:not(:first-child)
+            margin-top: 30px
+
+    &__item-img
+        max-width: 685px
+        img
+            width: 100%
+
+    .slider-button-next,
+    .slider-button-prev
+        position: absolute
+        left: 342px
+        z-index: 100
+
+    .slider-button-next
+        top: -106px
+
+    .slider-button-prev
+        bottom: -106px
+        
+
+.lead
+    display: flex
+    text-align: center
+    justify-content: center
+    background-color: rgba(#000, .41)
+    
+    &__inner
+        padding: 60px 0
+        max-width: 820px
+    
+    &__form-btn
+        width: 390px
+        height: 50px
+
+    &__form-input
+        margin-bottom: 30px
+        
+        &:nth-child(odd)
+            margin-right: 30px
+
+.contacts
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__head
+        text-align: center
+
+    &__address-item
+        margin-bottom: 20px
+
+    &__address-title
+        @include font('bold')
+
+    &__address-text
+        a
+            &:hover,
+            &:focus
+                text-decoration: underline
+
+    &__social
+        display: inline-block
+        max-width: 555px
+        img
+            width: 50px
+            height: 50px
+        a + a
+            margin-left: 50px
+
+.arrow-up
+    transform: rotate(180deg)
+
+.footer
+    font-size: 13px
+    line-height: 16px
+    padding: 40px 0
+    background-color: #292929
+
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__links
+        display: flex
+        a
+            margin-bottom: 20px
+
+    &__links-block
+        display: flex
+        flex-direction: column
+        margin-right: 90px
+
+    &__copy
+        max-width: 260px
+
+    &__copy-author 
+        margin-top: 20px
+        a
+            text-decoration: underline
+        
