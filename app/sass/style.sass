@@ -22,6 +22,62 @@
     &__item + .navigation__item
         margin-left: 30px
 
+.menu-btn
+    position: absolute
+    display: none
+    right: 20px
+    width: 20px
+    height: 2px
+    background-color: #fff
+    z-index: 10
+
+
+    &::before,
+    &::after
+        position: absolute
+        content: ""
+        left: 0
+        width: 20px
+        height: 2px
+        background-color: #fff
+        transition: .3s ease
+
+    &::before
+        top: 4px
+        
+    &::after
+        bottom: 4px
+
+    &.active
+        position: fixed
+        transform: rotate(45deg)
+        &::before
+            opacity: 0
+        &::after
+            transform: rotate(90deg)
+            bottom: 0
+
+.menu
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: #441eac
+    transition: .3s ease
+    &__list
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__item
+        text-align: center
+        margin-bottom: 30px
+
+    &.active
+        display: block
+    
 .hero
     padding-top: 200px
     background-image: url('../images/hero-bg.jpg')
@@ -39,6 +95,12 @@
     
     &__text
         margin-bottom: 70px
+
+    &__img
+        img
+            width: 100%
+            min-width: 180px
+            height: 100%
 
 .benefits
     position: relative
@@ -61,7 +123,14 @@
         align-items: center
         flex-wrap: wrap
     
+    &__number
+        position: absolute
+        font-size: 22px
+        left: 25px
+        top: 25px
+    
     &__item
+        position: relative
         display: flex
         flex-direction: column
         justify-content: center
@@ -93,6 +162,9 @@
         width: 100%
         height: 100%
         z-index: -1
+
+    &__inner
+        padding-bottom: 378px
 
     &__info
         text-align: center
@@ -252,3 +324,4 @@
         a
             text-decoration: underline
         
+@import 'media'

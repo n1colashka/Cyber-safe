@@ -6,7 +6,9 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     del = require('del'),
     cleanCSS = require('gulp-clean-css'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    webp = require('gulp-webp'),
+    imagemin = require('gulp-imagemin');
 
 
 gulp.task('clean', async function(){
@@ -64,21 +66,36 @@ gulp.task('browser-sync', function() {
   });
 });
 
+gulp.task('webp', function(){
+  return gulp.src('app/images/*.jpg')
+    .pipe(webp({
+      quality: 70
+  }))
+    .pipe(gulp.dest('app/images'))
+});
+
+gulp.task('images', function() {
+  return gulp.src('app/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('app/images/min'))
+});
+
 gulp.task('export', function(){
   let buildHtml = gulp.src('app/**/*.html')
     .pipe(gulp.dest('dist'));
 
-  let BuildCss = gulp.src('app/css/**/*.css')
+  let buildCss = gulp.src('app/css/**/*.css')
     .pipe(gulp.dest('dist/css'));
 
-  let BuildJs = gulp.src('app/js/**/*.js')
+  let buildJs = gulp.src('app/js/**/*.js')
     .pipe(gulp.dest('dist/js'));
     
-  let BuildFonts = gulp.src('app/fonts/**/*.*')
+  let buildFonts = gulp.src('app/fonts/**/*.*')
     .pipe(gulp.dest('dist/fonts'));
 
-  let BuildImg = gulp.src('app/img/**/*.*')
-    .pipe(gulp.dest('dist/img'));   
+  let buildImg = gulp.src('app/images/min/*.*')
+    .pipe(gulp.dest('dist/images'));   
+
 });
 
 gulp.task('watch', function(){
